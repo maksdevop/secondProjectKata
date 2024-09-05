@@ -64,6 +64,13 @@ li:hover {
     max-width: 320px;
 }
 
+.active {
+    color: rgba(126, 126, 130, 1);
+    border-left: 3px solid rgba(65, 246, 215, 1);
+    padding-left: 24px;
+    margin-left: -24px;
+}
+
 .side {
     overflow: hidden;
     z-index: 999;
