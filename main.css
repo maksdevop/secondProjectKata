@@ -16,14 +16,14 @@ body {
     font-family: TTLakes, sans-serif;
 }
 
+.container {
+    max-width: 320px;
+}
+
 button {
     border: none;
     background-color: white;
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    cursor: pointer;
 }
 
 .icon {
@@ -37,38 +37,18 @@ a {
     transform: rotate(360deg);
 }
 
-img,
-li {
-    cursor: pointer;
+/*  SIDE -------------------------------------------------------------------------------- */
+
+.side__menu-item {
+    padding: 5px;
+    margin-top: 22px;
 }
 
-@keyframes upMenu {
-    0% {
-        transform: translateY(0);
-        padding: 0;
-    }
-    100% {
-        background-color: rgb(255, 232, 232);
-        padding: 5px 10px;
-        transform: translateY(-30%) translateX(1%);
-    }
-}
-
-li:hover {
+.side__menu-item:hover {
+    background-color: rgb(255, 232, 232);
     border-radius: 10px;
-
-    animation: upMenu 1s forwards;
-}
-
-.container {
-    max-width: 320px;
-}
-
-.active {
-    color: rgba(126, 126, 130, 1);
-    border-left: 3px solid rgba(65, 246, 215, 1);
-    padding-left: 24px;
-    margin-left: -24px;
+    transition: 1s;
+    cursor: pointer;
 }
 
 .side {
@@ -94,7 +74,8 @@ li:hover {
 }
 
 .side__CPS {
-    margin-left: 17px;
+    margin-right: auto;
+    margin-left: 15px;
 }
 
 .side__menu {
@@ -109,8 +90,22 @@ li:hover {
     margin-top: 47px;
 }
 
-.side__menu li {
-    margin-top: 32px;
+/*  SIDE -------------------------------------------------------------------------------- */
+
+/*  FOOTER -------------------------------------------------------------------------------- */
+
+.footer {
+    margin-top: 20%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__images {
+    display: flex;
+    list-style: none;
 }
 
 .footer__message {
@@ -131,20 +126,24 @@ li:hover {
     font-weight: bolder;
 }
 
-.footer__languages {
+.languages {
     display: flex;
+    list-style: none;
 }
 
-.footer__languages button {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
-}
-
-.footer__languages button:not(:last-child) {
+.footer__languages li:not(:last-child) {
     margin-right: 7px;
 }
 
+/*  FOOTER  -------------------------------------------------------------------------------- */
+
 .active {
+    color: rgba(126, 126, 130, 1);
+    border-left: 3px solid rgba(65, 246, 215, 1);
+    padding-left: 24px;
+    margin-left: -24px;
+}
+
+.active-grey {
     color: rgba(126, 126, 130, 1);
 }
